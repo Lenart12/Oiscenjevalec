@@ -97,13 +97,3 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-
-html.dark-mode hl {
-  background-color: rgba(242,133,222,0.5);
-}
-html.dark-mode .hljs-addition {
-  background-color: #ECD1E0;
-} 
-html.dark-mode .hljs-deletion {
-  background-color: #C9E6E3;
-}
