@@ -105,13 +105,13 @@ function izpisiStran() {
     nav.innerHTML = '';
     vrednotenje.forEach((el, index) => {
         let row = cE('div', '', 'row mt-3 mx-5', naloge);
-        cE('hr', '', '', row);
+        cE('hr', '', 'w-100', row);
         let tockeDiv = cE('div', '', 'col-md-6', row);
         let prikazDiv = cE('div', '', 'col-md-6', row);
 
         for (let i = 0; i < el.navodila.length; i++) {
             if (i > 0)
-                cE('hr', '', '', tockeDiv);
+                cE('hr', '', 'w-100', tockeDiv);
             if (el.navodila[i].naslov)
                 cE('h5', el.navodila[i].naslov, '', tockeDiv);
 
@@ -199,7 +199,7 @@ function izpisiStran() {
                             'card-subtitle', cardBody);
                         
                         commit.files.forEach( (file) => {
-                            let filecard = cE('div', '', 'card mx-auto', cardBody);
+                            let filecard = cE('div', '', 'card mx-auto mt-1', cardBody);
                             let filecardBody = cE('div', '', 'card-body', filecard);
                             cE('h6', '<a class="link-dark" href="' + file.blob_url + '">' + file.filename + '</a>', 'card-title', filecardBody);
                             cE('h6', '<span class="text-success">+' + file.additions + " </span>" +
