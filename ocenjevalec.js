@@ -49,7 +49,7 @@ function oceniOddajo() {
 
     let vsota = {};
     
-    Array.from(document.querySelectorAll('input[type="checkbox"]')).forEach( (el) => {
+    Array.from(document.querySelectorAll('input[type="checkbox"]:not(#flexSwitchCheckChecked)')).forEach( (el) => {
         let value = (el.checked) ? parseInt(el.value) : 0;
         if (vsota[el.sklop]) 
             vsota[el.sklop] += value;
@@ -258,4 +258,16 @@ function vrniKomentarje() {
         }
     }
     document.getElementById('komentarji-vsi').value = vsi_komentarji;
+}
+
+async function spremeniBarve() {
+    let html = document.querySelector('html');
+    // console.log(html);
+    if (html.className == "dark-mode") {
+        html.className = "";
+        document.getElementById('ninja-image').src = "ninja.png";
+    } else {
+        html.className = "dark-mode";
+        document.getElementById('ninja-image').src = "ninja-dark.png";
+    }
 }
