@@ -1,0 +1,588 @@
+{
+    "vrednotenja": [
+        {
+            "navodila": [
+                {
+                    "sklop": "A",
+                    "naslov": "Z ukazom <ic>git checkout I-dodajanje-stranke</ic> se prestavite v vejo razvoja <ic>I-dodajanje-stranke</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite spletno stran <ic>/prijava</ic>. Delno izpolnite obrazec z imenom <ic>Živa</ic> (vnosno polje <ic>Ime</ic>) in državo <ic>Austria</ic> (vnosno polje <ic>Država</ic>) ter pritisnite gumb <ic>Registracija</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Spletna prodajalna še vedno deluje in ne povzroči nobene napake na odjemalcu oz. strežniku."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Poleg vnosnega polja <ic>Država</ic> je na desni strani prikazano sporočilo 1 obstoječih strank."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "HTML elementa z identifikatorjema <ic>FirstNameStatus</ic> in <ic>CountryStatus</ic> vsebujeta CSS razred <ic>fa-check</ic>, kar se odraža v sliki pozitivne kljukice pri vnosnih poljih imena in države."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "HTML elementa z identifikatorjema <ic>FirstName</ic> in <ic>Country</ic> vsebujeta CSS razred <ic>dovoljeno</ic>, kar se odraža v zelenem ozadju obeh vnosnih polj."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Po vnosu podatkov je imela prijavna stran gumb <ic>Registracija</ic> omogočen in ste ga lahko tudi kliknili."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prijavna stran se ob kliku na gumb <ic>Registracija</ic> osveži, vsebina vnosnih polj se izbriše in nad gumbom <ic>Registracija</ic> se izpiše sporočilo o napaki z vsebino <ic>Prišlo je do napake pri dodajanju nove stranke. Prosim preverite vnesene podatke in poskusite znova.</ic> (upoštevajte tudi v primeru manjših slovničnih napak)."
+                        }
+                    ],
+                    "opomba": "Če se strežnik ne zažene ali veja razvoja <ic>I-dodajanje-stranke</ic> ne obstaja ali ne vsebuje vsaj 2 uveljavitvi, v okviru te podnaloge dodelite <strong>0 točk</strong>!"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "B",
+                    "naslov": "Obiščite spletno stran <ic>/prijava</ic>. Izpolnite vsa vnosna polja, kjer v vnosno polje <ic>Ime</ic> vnesite <ic>Živa Marija</ic> in v polje <ic>Država</ic> vrednost <ic>USA</ic> ter pritisnite gumb <ic>Registracija</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Poleg vnosnega polja <ic>Država</ic> je na desni strani prikazano sporočilo <ic>13 obstoječih strank.</ic>"
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "HTML elementa z identifikatorjema <ic>FirstNameStatus</ic> in <ic>CountryStatus</ic> vsebujeta CSS razred <ic>fa-times</ic>, kar se odraža v sliki pri vnosnih poljih imena in države."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "HTML elementa z identifikatorjema <ic>FirstName</ic> in <ic>Country</ic> ne vsebujeta CSS razreda <ic>dovoljeno</ic>, zato tudi ni prisotnega zelenega ozadja na obeh vnosnih poljih."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prijavna stran ima gumb <ic>Registracija</ic> <strong>onemogočen</strong>."
+                        }
+                    ],
+                    "opomba": "Če sistem dovoli dodajanje stranke, se dodeli <strong>0 točk!</strong>"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "C",
+                    "naslov": "Obiščite spletno stran <ic>/prijava</ic>, v obrazcu za dodajanje nove stranke ustrezno izpolnite vse vrednosti: <ic>Živa-Marija</ic> (vnosno polje <ic>Ime</ic>), <ic>Novak</ic> (vnosno polje <ic>Priimek</ic>), <ic>Korončica d.o.o.</ic> (vnosno polje <ic>Podjetje</ic>), <ic>Volčji dol 12</ic> (vnosno polje <ic>Naslov</ic>), <ic>Spodnji Dol</ic> (vnosno polje <ic>Okrožje</ic>), <ic>6677</ic> (vnosno polje <ic>Poštna številka</ic>), <ic>Močvirnik</ic> (vnosno polje <ic>Mesto</ic>), <ic>Germany</ic> (vnosno polje <ic>Država</ic>), <ic>+38690123456</ic> (vnosno polje <ic>Telefon</ic>), <ic>+38690123457</ic> (vnosno polje <ic>Faks</ic>) in <ic>ziva@marija.net</ic> (vnosno polje <ic>E-pošta</ic>) ter pritisnite gumb <ic>Registracija</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prijavna stran se osveži in nad gumbom <ic>Registracija</ic> se izpiše sporočilo <ic>Nova stranka Živa-Marija Novak kot 5. v državi Germany je bila uspešno dodana.</ic> (upoštevajte tudi v primeru manjših slovničnih napak), da je bila stranka uspešno shranjena."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Stranka, ki ste jo dodali, se pojavi kot zadnja vrednost na seznamu strank, in sicer je zapisana kot <ic>Živa-Marija Novak, ziva@marija.net ::</ic>."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "D",
+                    "naslov": "Obiščite spletno stran <ic>/prijava</ic>, v obrazcu za dodajanje nove stranke v vnosno polje <ic>Ime</ic> najprej vpišite vrednost <ic>Živa-Ana-Mari</ic> in nato dodajte še vrednost <ic>ja</ic>. V vnosno polje <ic>Država</ic> najprej vpišite vrednost <ic>USASA</ic> in nato izbrišite zadnje 3 črke <ic>ASA</ic> in nato dodaje 1 črko <ic>A</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Po vnosu vrednosti <ic>Živa-Ana-Mari</ic> v vnosno polje <ic>Ime</ic> se ozadje le-tega obarva v zeleno barvo in desno od polja se prikaže pozitivna kljukica."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Po dodajanju vrednosti <ic>ja</ic> v vnosno polje <ic>Ime</ic>, tako da je celotna vsebina <ic>Živa-Ana-Marija</ic>, se ozadje le-tega ponastavi na privzeto (brez barve) in desno od polja se prikaže X."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "Po vnosu vrednosti <ic>USASA</ic> v vnosno polje <ic>Država</ic> se ozadje le-tega obarva v zeleno barvo in desno od polja se prikaže pozitivna kljukica. Sporočilo, desno od vnosnega polja, se glasi <ic>0 obstoječih strank</ic>."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "Po brisanju vrednosti <ic>ASA</ic> iz vnosnega polja <ic>Država</ic>, tako da je celotna vsebina <ic>US</ic>, se ozadje le-tega ponastavi na privzeto (brez barve) in desno od polja se prikaže X. Sporočilo, desno od vnosnega polja, se glasi <ic>0 obstoječih strank</ic>."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "Po dodajanju vrednosti <ic>A</ic> v vnosno polje <ic>Država</ic>, tako da je celotna vsebina <ic>USA</ic>, ozadje le-tega ostane na privzeto (brez barve) in desno od polja je prikazan . Sporočilo, desno od vnosnega polja, se glasi <ic>13 obstoječih strank</ic>."
+                        }
+                    ],
+                    "opomba": "Spodnja koda je primer delujoče implementacije (tega vam ni treba neposredno vrednotiti):<br /><ic>eracun.js</ic><pre class=\"lang-javascript\"><code><hl>// Preveri izpolnjena polja\nconst poljaIzpolnjena = function (polja) {\n  for (let polje in polja) if (polja[polje].trim().length == 0) return false;\n  return true;\n};</hl>\n\n// Registracija novega uporabnika\nstreznik.post(\"/prijava\", (zahteva, odgovor) => {\n  let form = new formidable.IncomingForm();\n<del>  let sporociloNapaka = \"Napaka\";</del>\n<hl>  let sporociloNapaka =\n    \"Prišlo je do napake pri dodajanju nove stranke. \\n       Prosim preverite vnesene podatke in poskusite znova.\";</hl>\n  let sporociloOK = \"OK\";\n  form.parse(zahteva, (napaka, polja) => {\n<hl>    if (napaka || !poljaIzpolnjena(polja) || polja[\"Phone\"].indexOf(\"+\") != 0) {\n      vrniStranke((napaka1, stranke) => {\n        vrniRacune((napaka2, racuni) => {\n          odgovor.render(\"prijava\", {\n            prijavniGumb: \"Prijava stranke\",\n            sporocilo: sporociloNapaka,\n            seznamStrank: stranke,\n            seznamRacunov: racuni,\n          });\n        });\n      });\n    } else {</hl>\n      pb.run(\n        \"INSERT INTO Customer (FirstName, LastName, Company, \\n                             Address, City, State, Country, PostalCode, \\n                             Phone, Fax, Email, SupportRepId) \\n       VALUES ($fn, <hl>$ln, $com, $addr, $city, $state, $country, $pc, $phone, \\n               $fax, $email, $sri)\",</hl>\n<del>        {},</del>\n<hl>        {\n          $fn: polja[\"FirstName\"],\n          $ln: polja[\"LastName\"],\n          $com: polja[\"Company\"],\n          $addr: polja[\"Address\"],\n          $city: polja[\"City\"],\n          $state: polja[\"State\"],\n          $country: polja[\"Country\"],\n          $pc: polja[\"PostalCode\"],\n          $phone: polja[\"Phone\"],\n          $fax: polja[\"Fax\"],\n          $email: polja[\"Email\"],\n          $sri: 8,\n        },</hl>\n        (napaka) => {\n          vrniStranke((napaka1, stranke) => {\n            vrniRacune((napaka2, racuni) => {\n              strankeGledeNaDrzave((napaka3, strankePoDrzavah) => {\n<hl>                let steviloStrank = strankePoDrzavah.filter((x) => {\n                  return (\n                    x.drzava.toLowerCase() == polja[\"Country\"].toLowerCase()\n                  );\n                });\n                steviloStrank =\n                  steviloStrank.length > 0 ? steviloStrank[0].stUporabnikov : 0;\n                sporociloOK =\n                  \"Nova stranka \" +\n                  polja[\"FirstName\"] +\n                  \" \" +\n                  polja[\"LastName\"] +\n                  \" kot \" +\n                  steviloStrank +\n                  \". v državi \" +\n                  polja[\"Country\"] +\n                  \" je bila uspešno dodana.\";</hl>\n                odgovor.render(\"prijava\", {\n                  prijavniGumb: \"Prijava stranke\",\n                  sporocilo:\n                    napaka || napaka1 || napaka2 || napaka3\n                      ? sporociloNapaka\n                      : sporociloOK,\n                  seznamStrank: stranke,\n                  seznamRacunov: racuni,\n                });\n              });\n            });\n          });\n        }\n      );\n<hl>    }</hl>\n  });\n});</code></pre><ic>public/skripte/prijava.js</ic><pre class=\"lang-javascript\"><code><hl>const preveriGumbRegistriraj = () => {\n    $(\"#Register\").prop(\n      \"disabled\",\n      $(\"#FirstNameStatus i\").hasClass(\"fa-times\") ||\n        $(\"#CountryStatus i\").hasClass(\"fa-times\")\n    );\n  };</hl>\n  \n  $(document).ready(() => {\n    $(\"#FirstName\").keyup(() => {\n<del>      console.log(\"Preveri ime nove stranke.\");</del>\n<hl>      let firstNameValue = $(\"#FirstName\");\n      let firstNameValidation = $(\"#FirstNameStatus i\");\n      let regex = /^[a-zčćžšđ-]+$/i;\n      if (\n        regex.test(firstNameValue.val()) &&\n        firstNameValue.val().length >= 2 &&\n        firstNameValue.val().length &lt;= 14\n      ) {\n        firstNameValidation.removeClass(\"fa-times\");\n        firstNameValidation.addClass(\"fa-check\");\n        firstNameValue.addClass(\"dovoljeno\");\n      } else {\n        firstNameValidation.removeClass(\"fa-check\");\n        firstNameValidation.addClass(\"fa-times\");\n        firstNameValue.removeClass(\"dovoljeno\");\n      }\n      preveriGumbRegistriraj();</hl>\n    });\n  \n    $(\"#Country\").keyup(() => {\n<del>      console.log(\"Preveri državo nove stranke.\");</del>\n<hl>      let countryValue = $(\"#Country\");\n      let countryValidation = $(\"#CountryStatus i\");\n      $.get(\"/stranke_po_drzavah\", (vrstice) => {\n        let steviloUporabnikov = vrstice.filter((x) => {\n          return x.drzava.toLowerCase() == countryValue.val().toLowerCase();\n        });\n        steviloUporabnikov =\n          steviloUporabnikov.length > 0 ? steviloUporabnikov[0].stUporabnikov : 0;\n        $(\"#obstojeceStrankeId\").html(steviloUporabnikov);\n        if (countryValue.val().length >= 3 && steviloUporabnikov &lt; 5) {\n          countryValidation.removeClass(\"fa-times\");\n          countryValidation.addClass(\"fa-check\");\n          countryValue.addClass(\"dovoljeno\");\n        } else {\n          countryValidation.removeClass(\"fa-check\");\n          countryValidation.addClass(\"fa-times\");\n          countryValue.removeClass(\"dovoljeno\");\n        }\n        preveriGumbRegistriraj();</hl>\n      });\n    });\n  \n    // Poslušalec ob kliku z miško na izbran račun\n    $(\"select#seznamRacunov\").change(function (e) {\n      let izbranRacunId = $(this).val();\n      $.get(\"/jeziki-racuna/\" + izbranRacunId, (racunJeziki) => {\n        $(\"#jezikiRacuna\").html(racunJeziki);\n      });\n    });\n  });</code></pre>"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "E",
+                    "naslov": "Z ukazom git checkout <ic>II-pregled-stranke</ic> se prestavite v vejo razvoja <ic>II-pregled-stranke</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite prijavno stran <ic>/prijava</ic>, kjer naj ne bo izbrana nobena stranka, in nato kliknite na gumb <ic>Prijava stranke</ic>. Nato izberite 3. stranko na seznamu, <ic>François Tremblay</ic> in kliknite na gumb Prijava stranke. Na začetni spletni strani <ic>/</ic> kliknite na gumb <ic>Odjava François Tremblay</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Spletna prodajalna še vedno deluje in ne povzroči nobene napake na odjemalcu oz. strežniku."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "7. stranka na seznamu je prikazana kot <ic>Astrid Gruber, astrid.gruber@apple.at :: 7</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "10. stranka na seznamu je prikazana kot <ic>Eduardo Martins, eduardo@woodstock.com.br (Woodstock Discos) :: 7</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob kliku na gumb <ic>Prijava stranke</ic>, kjer stranke nimamo izbrane, aplikacija izpiše obvestilo <ic>Za prijavo je potrebno izbrati stranko!</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Po izbiri 3. stranke na seznamu <ic>François Tremblay</ic> in kliku na gumb <ic>Prijava stranke</ic> nas aplikacija preusmeri na začetno stran, kjer se na gumbu desno zgoraj nahaja napis <ic>Odjava François Tremblay.</ic>"
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob kliku na gumb <ic>Odjava François Trembla</ic> nas aplikacija preusmeri na prijavno stran <ic>/prijava</ic>."
+                        }
+                    ],
+                    "opomba": "Če se strežnik ne zažene ali veja razvoja <ic>II-pregled-stranke</ic> ne obstaja ali ne vsebuje vsaj 2 uveljavitev, v okviru te podnaloge dodelite <strong>0 točk!</strong>"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "F",
+                    "naslov": "Na seznamu računov najprej izberite 2. račun <ic>Bjørn Hansen (2) - 2009-01-02</ic>, nato 5. račun <ic>John Gordon (5) - 2009-01-11</ic> in nato še 10. račun <ic>Hugh O'Reilly (10) - 2009-02-03</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob izbiri 2. računa <ic>Bjørn Hansen (2) - 2009-01-02</ic> se pod gumbom Izbira računa prikažejo podrobnosti z vsebino <ic>Jezik na računu: en.</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob izbiri 5. računa <ic>John Gordon (5) - 2009-01-11</ic> se pod gumbom Izbira računa prikažejo podrobnosti z vsebino <ic>Jezika na računu: en, ja.</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob izbiri 10. računa <ic>Hugh O'Reilly (10) - 2009-02-03</ic> se pod gumbom Izbira računa prikažejo podrobnosti z vsebino <ic>Jeziki na računu: es, it, fr, es, cy.</ic>."
+                        }
+                    ],
+                    "opomba": "Pri izpisu bodite pozorni na števnik jezikov. Pravilen odgovor lahko štejete tudi, če med vejico in naslednjim jezikom v izpisu ni presledka, sicer se mora izpis ujemati z ocenjevalnim kriterijem.<br />Spodnja koda je primer delujoče implementacije (tega vam ni treba neposredno vrednotiti):<br /><ic>eracun.js</ic><pre class=\"lang-javascript\"><code>// Vrni stranke iz podatkovne baze\nconst vrniStranke = (povratniKlic) => {\n    pb.all(\"SELECT * FROM Customer\", (napaka, stranke) => {\n<hl>      stranke.forEach((stranka) => {\n        stranka.Company = stranka.Company ? \"(\" + stranka.Company + \")\" : \"\";\n      });</hl>\n      povratniKlic(napaka, stranke);\n    });\n  };\n  ...\n  // Prikaz strani za prijavo\n  streznik.get(\"/prijava\", (zahteva, odgovor) => {\n    vrniStranke((napaka1, stranke) => {\n      vrniRacune((napaka2, racuni) => {\n<del>        for (let i = 0; i &lt; stranke.length; i++) stranke[i].stRacunov = 0;\n        for (let i = 0; i &lt; racuni.length; i++)\n          filmiIzRacuna(racuni[i].InvoiceId, (napaka, vrstice) => {});</del>\n<hl>        for (let i = 0; i &lt; stranke.length; i++)\n          stranke[i].stRacunov = prestejRacuneZaStranko(stranke[i], racuni);</hl>\n        odgovor.render(\"prijava\", {\n          sporocilo: \"\",\n          prijavniGumb: \"Prijava stranke\",\n          podnaslov: \"Prijavna stran\",\n          seznamStrank: stranke,\n          seznamRacunov: racuni,\n        });\n      });\n    });\n  });\n  ...\n  streznik.get(\"/jeziki-racuna/:racunId\", (zahteva, odgovor) => {\n    let racunId = parseInt(zahteva.params.racunId, 10);\n    filmiIzRacuna(racunId, (napaka, vrstice) => {\n<del>      odgovor.send(\"\");</del>\n<hl>      let jeziki = new Set();\n      for (let i = 0; i &lt; vrstice.length; i++) jeziki.add(vrstice[i].jezik);\n      let stJezikov = jeziki.size;\n      odgovor.send(\n        \"Jezik\" +\n          (stJezikov > 1 ? (stJezikov == 2 ? \"a\" : \"i\") : \"\") +\n          \" na računu: \" +\n          Array.from(jeziki).join(\", \") +\n          \".\"\n      );</hl>\n    });\n  });</code></pre><ic>views/prijava.hbs</ic><pre class=\"lang-html\"><code>&lt;option value=\"{{ stranka.CustomerId }}\">\n  {{ stranka.FirstName }} {{ stranka.LastName }}, {{ stranka.Email }}<hl> {{ stranka.Company }}</hl> ::<hl> {{ stRacunov }}</hl>\n&lt;/option></code></pre><ic>public/skripte/prijavaOdjava.js</ic><pre class=\"lang-javascript\"><code>$(document).ready(() => {\n    $(\"#prijavaOdjavaGumb\").click(() => {\n      let idIzbraneStranke = $(\"#seznamStrank\").val();\n<hl>      if (!idIzbraneStranke && window.location.pathname == \"/prijava\")\n        alert(\"Za prijavo je potrebno izbrati stranko!\");\n      else</hl>\n        window.location = idIzbraneStranke\n          ? \"/prijavaOdjava/\" + idIzbraneStranke\n          : \"/prijavaOdjava/brezStranke\";\n    });\n  });</code></pre>"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "G",
+                    "naslov": "Z ukazom git checkout <ic>III-kosarica</ic> se prestavite v vejo razvoja <ic>III-kosarica</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite začetno spletno stran <ic>/</ic>. Ko se stran naloži, jo še enkrat ponovno naložite.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Na levem seznamu se nahajajo filmi, ki so prikazani z besedilom barve <ic>black</ic> (črna), <ic>tomato</ic> (rdeča), <ic>darkorchid</ic> (vijolična) oz. <ic>goldenrod</ic> (zlata). Ob prehodu miškinega kazalca čez poljuben film na levem seznamu barva pisave ostane nespremenjena."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Z (rdečo) <ic>tomato</ic> barvo pisave je označenih <strong>8 filmov</strong>, in sicer <ic>One Man's Hero</ic>, <ic>Hostile Intentions</ic>, <ic>The General</ic>, <ic>The Lord of the Rings: The Fellowship of the Ring</ic>, <ic>乱</ic>, <ic>The Matrix</ic>, <ic>GHOST IN THE SHELL</ic> in <ic>Braveheart</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": " Z (vijolično) <ic>darkorchid</ic> barvo pisave je označenih <strong>15 filmov</strong>, in sicer <ic>The Shawshank Redemption</ic>, <ic>Pixote: A Lei do Mais Fraco</ic>, <ic>The Godfather: Part II</ic>, <ic>Pulp Fiction</ic>, <ic>Se7en</ic>, <ic>Reservoir Dogs</ic>, <ic>On the Waterfront</ic>, <ic>Monsieur Verdoux</ic>, <ic>To Kill a Mockingbird</ic>, <ic>The Thin Blue Line</ic>, <ic>The Big Heat</ic>, <ic>The Big Lebowski</ic>, <ic>Stand by Me</ic>, <ic>Blue Velvet</ic> in <ic>Dancer in the Dark</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Z (zlato) <ic>goldenrod</ic> barvo pisave so označeni <strong>3 filmi</strong>, in sicer <ic>M</ic>, <ic>Du rififi chez les hommes</ic> in <ic>Bound by Honor</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Besedilo naslova grafa je prikazano v barvi <ic>#400080</ic> in se glasi <ic>Najboljši filmi čez čas: ocene in donosnost</ic>, posamezni filmi na grafu so prikazani s križci."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Besedilo podnaslova grafa je prikazano v barvi <ic>#009900</ic> in je v obliki <ic>{naslovFilma} :: {dobicekAliIzguba}</ic> oz. <ic>{naslovFilma}, {dobicekAliIzguba}</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Na X osi grafa so prikazani datumi izdaje filmov z vrednostmi <ic>1941, 1956, 1971, 1986, 2001</ic>, na Y osi grafa so prikazane ocene filmov z vrednostmi <ic>7,8,9,10,11</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob ponovnem nalaganju strani je besedilo podnaslova grafa prikazano v isti barvi kot prej, vendar so prikazane podrobnosti drugega filma v ustrezni obliki."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Pri najstarejšem filmu, ki ima oceno nižjo od 8, se ob prehodu miškinega kazalca prikaže besedilo <ic>Rebecca, dobiček 5 milijonov €: 7.7</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Filmov, ki imajo oceno višjo od 9 in nižjo od 10 na grafu ni prikazanih."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob prehodu miškinega kazalca pri najbolje ocenjenem filmu na grafu se prikaže besedilo <ic>Dancer, Texas Pop. 81, dobiček 565592 €: 10</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob prehodu miškinega kazalca pri drugem najbolje ocenjenem filmu na grafu se prikaže besedilo <ic>The Shawshank Redemption, dobiček 3 milijonov €: 8.5</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob prehodu miškinega kazalca pri najslabše ocenjenem filmu takoj po letu 1971 na grafu se prikaže besedilo <ic>Harold and Maude, izguba -1 milijonov €: 7.7</ic>."
+                        }
+                    ],
+                    "opomba": "Če se strežnik ne zažene ali veja razvoja <ic>III-kosarica</ic> ne obstaja ali ne vsebuje vsaj 2 uveljavitev, v okviru te podnaloge dodelite <strong>0 točk!</strong>"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "H",
+                    "naslov": "V nakupovalno košarico dodajte zadnje 3 filme na seznamu, in sicer: <ic>Bound by Honor</ic>, <ic>Institute Benjamenta, or This Dream People Call Human Life</ic> in <ic>My Man Godfrey</ic>. Nato v naslednjem vrstnem redu kliknite na podrobnosti posameznega filma v nakupovalni košarici: <ic>My Man Godfrey</ic> (1. klik), <ic>My Man Godfrey</ic> (2. klik), <ic>Bound by Honor</ic> (3. klik), <ic>Institute Benjamenta, or This Dream People Call Human Life</ic> (4. klik) in <ic>Institute Benjamenta, or This Dream People Call Human Life</ic> (5. klik).",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob 1. kliku na <ic>My Man Godrefy</ic> se prikažejo podrobnosti z naslednjo vsebino <ic>Trajanje: 94 min, Žanri: Comedy,Romance in Leto izdaje: 1936</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob 2. kliku na <ic>My Man Godrefy</ic> se podrobnosti skrijejo."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob 3. kliku na <ic>Bound by Honor</ic> se prikažejo podrobnosti z naslednjo vsebino <ic>Trajanje: 180 min, Žanri: Drama,Action,Thriller,Crime, Leto izdaje: 1993</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob 4. kliku na <ic>Institute Benjamenta, or This Dream People Call Human Life</ic> se prikažejo podrobnosti z naslednjo vsebino <ic>Trajanje: 104 min, Žanri: Animation,Drama, Leto izdaje: 1995</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob 5. kliku na <ic>Institute Benjamenta, or This Dream People Call Human Life</ic> se podrobnosti skrijejo."
+                        }
+                    ],
+                    "opomba": "Spodnja koda je primer delujoče implementacije (tega vam ni potrebno neposredno vrednotiti):<br /><ic>public/skripte/seznam.js</ic><pre class=\"lang-javascript\"><code>// Vrni več podrobnosti filmi\nconst vecPodrobnostiFilma = (id) => {\n    $.get(\"/vec-o-filmu/\" + id, (podatki) => {\n<del>      console.log(\"Dodaj podrobnosti o filmu.\");</del>\n<hl>      if ($(\"#sporocilo div.podrobnosti-\" + id).length > 0) {\n        $(\"#sporocilo\").html(\"\");\n      } else {\n        $(\"#sporocilo\").html(\n          \"&lt;div class='alert alert-info podrobnosti-\" +\n            id +\n            \"'>&lt;small>&lt;strong>Trajanje&lt;/strong>: \" +\n            podatki.trajanje +\n            \" min&lt;/small>&lt;br>\" +\n            \"&lt;small>&lt;strong>Žanri&lt;/strong>: \" +\n            podatki.zanri +\n            \"&lt;/small>&lt;br>\" +\n            \"&lt;small>&lt;strong>Leto izdaje&lt;/strong>: \" +\n            new Date(podatki.datumIzdaje).getFullYear() +\n            \"&lt;/small>\" +\n            \"&lt;/div>\"\n        );\n      }</hl>\n    });\n  };\n  ...\n  $(document).ready(() => {\n    ...\n    // Nariši graf\n    $.get(\"/podroben-seznam-filmov\", (seznam) => {\n<hl>      const nakljucniFilm = Math.floor(Math.random() * (seznam.length + 1));\n      let opisNakljucnegaFilma = \"?\" + \" :: \" + \"?\";\n      let podatkiZaGraf = [];\n      for (let key in seznam) {\n        let dobicek = seznam[key].dobicek - seznam[key].stroski;\n        let opisDobicka =\n          (dobicek >= 0 ? \"dobiček\" : \"izguba\") +\n          \" \" +\n          (Math.abs(dobicek) > 1000000\n            ? Math.round(dobicek / 1000000) + \" milijonov\"\n            : dobicek);\n        podatkiZaGraf[key] = {\n          x: new Date(seznam[key].datumIzdaje),\n          y: seznam[key].ocena,\n          label: seznam[key].naslov + \", \" + opisDobicka + \" €\",\n        };\n        if (key == nakljucniFilm)\n          opisNakljucnegaFilma = seznam[key].naslov + \" :: \" + opisDobicka + \" €\";\n      }</hl>\n  \n      let chart = new CanvasJS.Chart(\"chartContainer\", {\n        title: {\n<del>          text: \"Nariši graf\",</del>\n<hl>          text: \"Najboljši filmi čez čas: ocene in donosnost\",\n          fontColor: \"#400080\",</hl>\n        },\n<hl>        data: [\n          {\n            type: \"scatter\",\n            markerSize: 8,\n            markerType: \"cross\",\n            dataPoints: podatkiZaGraf,\n          },\n        ],</hl>\n        subtitles: [\n          {\n<del>            text: \"kot zahtevajo navodila\",</del>\n<hl>            text: opisNakljucnegaFilma,\n            fontColor: \"#009900\",</hl>\n          },\n        ],\n      });\n      chart.render();\n    });\n    ...\n  });</code></pre><ic>eracun.js</ic><pre class=\"lang-javascript\"><code>// Vrni seznam filmov\nconst vrniSeznamFilmov = (povratniKlic) => {\n    pb.all(\n      \"SELECT   Movie.MovieId AS id, \\n                Movie.OriginalTitle AS naslov, \\n                Movie.VoteAverage AS ocena, \\n                COUNT(InvoiceLine.InvoiceId) AS steviloProdaj, \\n                GROUP_CONCAT(DISTINCT Language.NameShort) AS jeziki, \\n                Movie.ReleaseDate AS datumIzdaje, \\n                Movie.Runtime AS trajanje, \\n                Movie.Revenue AS dobicek, \\n                Movie.Budget AS stroski, \\n                GROUP_CONCAT(DISTINCT Genre.Name) AS zanri \\n       FROM     Movie, Language, MovieSpokenLanguages, Genre, MovieGenres, InvoiceLine \\n       WHERE    Language.LanguageId = MovieSpokenLanguages.LanguageId AND \\n                Movie.MovieId = MovieSpokenLanguages.MovieId AND \\n                Genre.GenreId = MovieGenres.GenreId AND \\n                Movie.MovieId = MovieGenres.MovieId AND \\n                Movie.MovieId = InvoiceLine.MovieId \\n       GROUP BY Movie.MovieId \\n       ORDER BY ocena DESC, steviloProdaj DESC, naslov ASC \\n       LIMIT    100\",\n      (napaka, vrstice) => {\n        for (let i = 0; i &lt; vrstice.length; i++) {\n<del>          vrstice[i].marketing = \"obicajno\";</del>\n<hl>          if (\n            vrstice[i].zanri.indexOf(\"Action\") >= 0 &&\n            vrstice[i].zanri.indexOf(\"Crime\") >= 0\n          ) {\n            vrstice[i].marketing = \"oboje\";\n          } else if (vrstice[i].zanri.indexOf(\"Action\") >= 0) {\n            vrstice[i].marketing = \"akcija\";\n          } else if (vrstice[i].zanri.indexOf(\"Crime\") >= 0) {\n            vrstice[i].marketing = \"kriminalka\";\n          }</hl>\n        }\n        povratniKlic(napaka, vrstice);\n      }\n    );\n  };\n  ...\n  // Prikaz seznama filmov na strani\n  streznik.get(\"/podroben-seznam-filmov\", (zahteva, odgovor) => {\n    vrniSeznamFilmov((napaka, vrstice) => {\n      if (napaka) odgovor.sendStatus(500);\n<del>      else odgovor.send(vrstice);</del>\n<hl>      else odgovor.send(vrstice.filter((x) => x.dobicek != 0 || x.stroski != 0));</hl>\n    });\n  });</code></pre><ic>views/seznam.hbs</ic><pre class=\"lang-html\"><code>&lt;style>\n  ...\n  .obicajno {\n    color: black;\n  }\n<hl>  .akcija, .akcija:hover {\n    color: tomato;\n  }\n  .kriminalka, .kriminalka:hover {\n    color: darkorchid;\n  }\n  .oboje, .oboje:hover {\n    color: goldenrod;\n  }</hl>\n&lt;/style></code></pre>"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "I",
+                    "naslov": "Z ukazom git checkout <ic>IV-racun</ic> se prestavite v vejo razvoja <ic>IV-racun</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite prijavno spletno stran prodajalne <ic>/prijava</ic>. Izberite 7. račun na seznamu (tj. račun za <ic>Niklas Schröder (7) - 2009-02-01</ic>) ter pritisnite gumb <ic>Izbira računa</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Spletna prodajalna še vedno deluje in ne povzroči nobene napake na odjemalcu oz. strežniku."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prikaže se vam račun, ki vsebuje iste podatke o <strong>kupcu</strong> kot račun <ic>resitev-baza.xml</ic> in je v ustrezni obliki (preverite ime in priimek, naslov, poštno številko, mesto in državo)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prikaže se vam račun, ki vsebuje iste podatke o <strong>postavkah računa (filmih)</strong> kot račun <ic>resitev-baza.xml</ic> in je v ustrezni obliki (2 filma <ic>The Bank Dick (1940)</ic> in <ic>Wild Wild West (1999)</ic>, ki imata ujemajoče podatke za količino, neto ceno na enoto, neto znesek postavke, osnove za DDV, vrednost DDV, stopnjo DDV in vrednost z DDV)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prikaže se vam račun, ki vsebuje iste podatke o <strong>agregiranih cenah</strong> kot račun <ic>resitev-baza.xml</ic> in je v ustrezni obliki (preverite skupni znesek neto, skupni znesek z DDV, skupni znesek popustov, znesek zaokrožitve in skupni znesek za plačilo)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prikaže se vam račun, ki vsebuje iste podatke o <strong>davkih</strong> kot račun <ic>resitev-baza.xml</ic> in je v ustrezni obliki (preverite osnovo za DDV in znesek DDV za obe stopnji DDV)."
+                        }
+                    ],
+                    "opomba": "Če se strežnik ne zažene ali veja razvoja <ic>IV-racun</ic> ne obstaja ali ne vsebuje vsaj 2 uveljavitev, v okviru te podnaloge dodelite <strong>0 točk!</strong><br />Spodnja koda je primer delujoče implementacije (tega vam ni treba neposredno vrednotiti):<br /><ic>eracun.js</ic><pre class=\"lang-javascript\"><code>// Izpis račun v HTML predstavitvi na podlagi podatkov iz baze\nstreznik.post(\"/izpisiRacunBaza\", (zahteva, odgovor) => {\n    let form = new formidable.IncomingForm();\n    form.parse(zahteva, (napaka, polja) => {\n      let racunId = parseInt(polja[\"seznamRacunov\"], 10);\n      strankaIzRacuna(racunId, (stranka) => {\n        filmiIzRacuna(racunId, (napaka, filmi) => {\n<hl>          let povzetek = {\n            vsotaSPopustiInDavki: 0,\n            vsoteZneskovDdv: { 0: 0, 9.5: 0, 22: 0 },\n            vsoteOsnovZaDdv: { 0: 0, 9.5: 0, 22: 0 },\n            vsotaVrednosti: 0,\n            vsotaPopustov: 0,\n          };\n          filmi.forEach((film, i) => {\n            film.zapSt = i + 1;\n            film.cena = film.trajanje / 100;\n            film.vrednost = film.kolicina * film.cena;\n            film.davcnaStopnja = 22;\n            film.popustStopnja = 0;\n            film.popust = film.kolicina * film.cena * (film.popustStopnja / 100);\n            film.osnovaZaDdv = film.vrednost - film.popust;\n            film.ddv = film.osnovaZaDdv * (film.davcnaStopnja / 100);\n            film.osnovaZaDdvInDdv = film.osnovaZaDdv + film.ddv;\n            povzetek.vsotaSPopustiInDavki += film.osnovaZaDdv + film.ddv;\n            povzetek.vsoteZneskovDdv[\"\" + film.davcnaStopnja] += film.ddv;\n            povzetek.vsoteOsnovZaDdv[\"\" + film.davcnaStopnja] += film.osnovaZaDdv;\n            povzetek.vsotaVrednosti += film.vrednost;\n            povzetek.vsotaPopustov += film.popust;\n          });</hl>\n          odgovor.setHeader(\"Content-Type\", \"text/xml\");\n          odgovor.render(\"eslog\", {\n            vizualiziraj: true,\n<del>            postavkeRacuna: null,</del>\n<hl>            postavkeRacuna: filmi,</hl>\n<del>            povzetekRacuna: null,</del>\n<hl>            povzetekRacuna: povzetek,</hl>\n            stranka: null,\n            stranka: stranka,\n            layout: null,\n          });\n        });\n      });\n    });\n  });</code></pre><ic>views/eslog.hbs</ic><pre class=\"lang-xml\"><code>&lt;S_NAD>\n  &lt;D_3035>BY&lt;/D_3035>\n  &lt;C_C080>\n    &lt;!-- BT-44: The full name of the Buyer. -->\n<del>    &lt;D_3036>&lt;/D_3036></del>\n<hl>    &lt;D_3036>{{ stranka.FirstName }} {{ stranka.LastName }}&lt;/D_3036></hl>\n  &lt;/C_C080>\n  &lt;C_C059>\n    &lt;!-- BT-50: The main address line in an address. -->\n<del>    &lt;D_3042>&lt;/D_3042></del>\n<hl>    &lt;D_3042>{{ stranka.Address }}&lt;/D_3042></hl>\n  &lt;/C_C059>\n  &lt;!-- BT-52: The common name of the city, town or village, where the Buyer's address is located. -->\n<del>  &lt;D_3164>&lt;/D_3164></del>\n<hl>  &lt;D_3164>{{ stranka.City }}&lt;/D_3164></hl>\n  &lt;C_C819>\n    &lt;!-- BT-54: The subdivision of a country. -->\n<del>    &lt;D_3228>&lt;/D_3228></del>\n<hl>    &lt;D_3228>{{ stranka.Country }}&lt;/D_3228></hl>\n  &lt;/C_C819>\n  &lt;!-- BT-53: The identifier for an addressable group of properties according to the relevant postal service. -->\n<del>  &lt;D_3251>&lt;/D_3251></del>\n<hl>  &lt;D_3251>{{ stranka.PostalCode }}&lt;/D_3251></hl>\n  &lt;!-- BT-55: A code that identifies the country. -->\n  &lt;D_3207>/&lt;/D_3207>\n&lt;/S_NAD></code></pre>"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "J",
+                    "naslov": "Z ukazom <ic>git checkout V-popust</ic> se prestavite v vejo razvoja <ic>V-popust</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite prijavno spletno stran prodajalne <ic>/prijava</ic>. Izberite 10. stranko na seznamu (tj. stranka <ic>Eduardo Martins</ic>) ter pritisnite gumb <ic>Prijava stranke</ic>. Nato v košarico dodajte prve 3 filme, in sicer <ic>Dancer, Texas Pop. 81</ic>, <ic>Stiff Upper Lips</ic> ter <ic>One Man's Hero</ic>.<br />Pritisnite gumb <ic>Pripravi račun</ic> (HTML).",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Spletna prodajalna še vedno deluje in ne povzroči nobene napake na odjemalcu oz. strežniku."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prikazani račun vsebuje iste podatke o <strong>kupcu</strong> kot račun <ic>resitev-kosarica-3.xml</ic> in je v ustrezni obliki (preverite ime in priimek, naslov, poštno številko, mesto in državo)."
+                        },
+                        {
+                            "tocke": 3,
+                            "besedilo": "Prikaže se vam račun, ki vsebuje iste podatke o <strong>postavkah računa (filmih)</strong> kot račun <ic>resitev-kosarica-3.xml</ic> in je v ustrezni obliki (3 filmi, ki imajo ujemajoče podatke za količino, neto ceno na enoto, neto znesek postavke, osnove za DDV, vrednost DDV, stopnjo DDV in vrednost z DDV ter še posebej popusti)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prikazani račun vsebuje iste podatke o <strong>agregiranih cenah</strong> in davkih kot račun <ic>resitev-kosarica-3.xml</ic> in je v ustrezni obliki (preverite skupni znesek neto, skupni znesek z DDV, skupni znesek popustov, znesek zaokrožitve in skupni znesek za plačilo ter osnovo za DDV in znesek DDV za obe stopnji DDV)."
+                        }
+                    ],
+                    "opomba": "Če se strežnik ne zažene ali veja razvoja <ic>V-popust</ic> ne obstaja ali ne vsebuje vsaj 2 uveljavitev, v okviru te podnaloge dodelite <strong>0 točk!</strong>"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "K",
+                    "naslov": "V brskalniku se v zgodovini prestavite nazaj in na novi strani (po potrebi ponovno osvežite stran) v košarico dodajte še naslednjih 5 filmov, in sicer <ic>West Beyrouth</ic>, <ic>The Shawshank Redemption</ic>, <ic>Pixote: A Lei do Mais Fraco</ic>, <ic>The Godfather: Part II</ic> in <ic>Pulp Fiction</ic> ter pritisnite gumb <ic>Pripravi račun (HTML)</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prikazani račun vsebuje iste podatke o <strong>kupcu</strong> kot račun <ic>resitev-kosarica-8.xml</ic> in je v ustrezni obliki (preverite ime in priimek, naslov, poštno številko, mesto in državo)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prikaže se vam račun, ki vsebuje iste podatke o <strong>postavkah računa (filmih)</strong> kot račun <ic>resitev-kosarica-8.xml</ic> in je v ustrezni obliki (8 filmov, ki imajo ujemajoče podatke za količino, neto ceno na enoto, neto znesek postavke, osnove za DDV, vrednost DDV, stopnjo DDV in vrednost z DDV ter še posebej popusti)."
+                        },
+                        {
+                            "tocke":1,
+                            "besedilo": "Prikazani račun vsebuje iste podatke o <strong>agregiranih cenah</strong> in <strong>davkih</strong> kot račun <ic>resitev-kosarica-8.xml</ic> in je v ustrezni obliki (preverite skupni znesek neto, skupni znesek z DDV, skupni znesek popustov, znesek zaokrožitve in skupni znesek za plačilo ter osnovo za DDV in znesek DDV za obe stopnji DDV)."
+                        }
+                    ],
+                    "opomba": "Primer delujoče implementacije prikazuje spodnja koda (tega vam ni potrebno neposredno vrednotiti):<br /><ic>eracun.js</ic><pre class=\"lang-javascript\"><code>// Vrni podrobnosti o stranki iz seje\nconst strankaIzSeje = (zahteva, povratniKlic) => {\n<hl>    if (!zahteva.session.trenutnaStranka) {</hl>\n      povratniKlic(false);\n<hl>    } else {\n      pb.all(\n        \"SELECT * \\n         FROM   Customer \\n         WHERE  Customer.CustomerId = $id\",\n        { $id: zahteva.session.trenutnaStranka },\n        (napaka, vrstice) => {\n          if (napaka) povratniKlic(false);\n          else povratniKlic(vrstice[0]);\n        }\n      );</hl>\n    }\n  };\n  ...\n  // Izpis računa v HTML predstavitvi ali izvorni XML obliki\n  streznik.get(\"/izpisiRacun/:oblika\", (zahteva, odgovor) => {\n    strankaIzSeje(zahteva, (stranka) => {\n      filmiIzKosarice(zahteva, (filmi) => {\n        if (!filmi) {\n          ...\n        } else if (filmi.length == 0) {\n          ...\n        } else {\n          ...\n          filmi.forEach((film, i) => {\n            ...\n            film.popustStopnja = 0;\n<hl>            film.popustStopnja += film.zanri.split(\",\").length > 1 ? 5 : 0;\n            film.popustStopnja += film.ocena;</hl>\n            ...\n          });\n          ...\n        }\n      });\n    });\n  });</code></pre>"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "L",
+                    "naslov": "Z ukazom <ic>git checkout master</ic> se prestavite v vejo razvoja <ic>master</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Pri vrednotenju podatkov o kupcu upoštevajte iste smernice kot pri <strong>kriterijih</strong> vrednotenja <strong>J</strong> in <strong>K</strong>.<br />Korake v nadaljevanju izvedite v zaporedju. Če iz prejšnjega v naslednji korak pride do napake, ki vam onemogoča napredovanje, vse nadaljnje kriterije ocenite z <strong>0 točkami!</strong><br/>Obiščite spletno stran <ic>/prijava</ic>. V vnosno polje <ic>Ime</ic> vnesite vrednost <ic>Špela</ic> in v vnosno polje <ic>Država</ic> vrednost <ic>SLO</ic> ter pritisnite gumb <ic>Registracija</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Gumb <ic>Registracija</ic> je po vnosu podatkov omogočen, prijavna stran se osveži in nad gumbom <ic>Registracija</ic> se izpiše sporočilo o napaki z vsebino <ic>Prišlo je do napake pri dodajanju nove stranke. Prosim preverite vnesene podatke in poskusite znova.</ic> (upoštevajte tudi v primeru manjših slovničnih napak)."
+                        }
+                    ],
+                    "opomba": "Če se strežnik ne zažene ali veja razvoja <ic>master</ic> ne obstaja ali ne vsebuje vsaj 2 uveljavitev, v okviru te podnaloge dodelite <strong>0 točk!</strong>"
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "M",
+                    "naslov": "Na prijavni strani <ic>/prijava</ic>, v obrazcu za registracijo ustrezno izpolnite vse vrednosti (<ic>Ime</ic> = <ic>Špela</ic>, <ic>Priimek</ic> = <ic>Venera</ic>, <ic>Podjetje</ic> = <ic>Vesolje s.p.</ic>, <ic>Naslov</ic> = <ic>Pot v pogubo 13</ic>, <ic>Okrožje</ic> = <ic>Notranjska</ic>, <ic>Poštna številka</ic> = <ic>1010</ic>, <ic>Mesto</ic> = <ic>Veseljkovci</ic>, <ic>Država</ic> = <ic>SLO</ic>, <ic>Telefon</ic> = <ic>+386113</ic>, <ic>Faks</ic> = <ic>+386112</ic>, <ic>E-pošta</ic> = <ic>Spela@was.here</ic>) in pritisnite gumb <ic>Registracija</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prijavna stran se osveži in nad gumbom <ic>Registracija</ic> se izpiše sporočilo <ic>Nova stranka Špela Venera kot 1. v državi SLO je bila uspešno dodana.</ic> (upoštevajte tudi v primeru manjših slovničnih napak)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Na novo dodana stranka se pojavi na zadnjem mestu na seznamu strank, kjer je zavedena kot <ic>Špela Venera, Spela@was.here (Vesolje s.p.) ::</ic>."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "N",
+                    "naslov": "Na seznamu strank izberite ravno dodano stranko <ic>Špela Venera, Spela@was.here</ic> in pritisnite gumb <ic>Prijava stranke</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Pojavi se začetna stran spletne prodajalne s seznamom filmov, prazno nakupovalno košarico in grafom, ki prikazuje najboljše filme čez čas z ocenami in donosnostjo."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Napis v gumbu za odjavo je <ic>Odjava Špela Venera</ic>."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "O",
+                    "naslov": "S prijavljeno stranko <ic>Špela Venera</ic> dodajte v nakupovalno košarico poljuben film in kliknite gumb <ic>Pripravi račun (HTML)</ic>. Nato se sprehodite v zgodovini brskanja 1 korak nazaj in ponovno osvežite stran ter pritisnite gumb <ic>Odjava Špela Venera</ic>. Nato se na prijavni strani zopet prijavite z isto stranko <ic>Špela Venera</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Po kliku na gumb <ic>Pripravi račun (HTML)</ic> se uporabniku prikaže račun z izbranim filmom."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Spletna prodajalna vas je ob odjavi uporabnika preusmerila na prijavno spletno stran <ic>/prijava</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Nakupovalna košarica je po ponovni prijavi uporabnika prazna."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "P",
+                    "naslov": "S prijavljeno stranko <ic>Špela Venera</ic> v nakupovalno košarico dodajte filma <ic>The Shawshank Redemption</ic> in <ic>Pulp Fiction</ic> ter zahtevajte račun s klikom na gumb <ic>Pripravi račun (HTML)</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prikazani račun vsebuje iste podatke o <strong>kupcu</strong>, <strong>postavkah računa (filmih)</strong>, <strong>agregiranih cenah</strong> in <strong>davkih</strong>, ki je enak računu prikazanem na spletni povezavi <ic>resitev-master.xml</ic>. Preverite vsebino vseh polj!"
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "Q",
+                    "naslov": "Obiščite prijavno spletno stran prodajalne <ic>/prijava</ic>. Izberite 5. račun na seznamu (tj. račun za <ic>John Gordon</ic>), kjer se prikažejo podrobnosti računa ter pritisnite gumb <ic>Izbira računa</ic>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob izbiri 1. računa <ic>Leonie Köhler (1) - 2009-01-11</ic> se pod gumbom <ic>Izbira računa</ic> prikažejo podrobnosti z vsebino <ic>Jezik na računu: en</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prikazani račun vsebuje iste podatke o <strong>naročniku</strong>, <strong>postavkah računa (filmih)</strong>, <strong>agregiranih cenah</strong> in <strong>davkih</strong>, ki je enak računu prikazanem na spletni povezavi <ic>resitev-master-baza.xml</ic>. Preverite vsebino vseh polj!"
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        }
+    ],
+    "offsets": {
+        "1.A": [
+            "0_1389",
+            "0_1390",
+            "0_1391",
+            "0_1392",
+            "0_1393",
+            "0_1394",
+            "0_1395",
+            "0_1396",
+            "0_1397"
+        ],
+        "2.B": [
+            "1_1398",
+            "1_1399",
+            "1_1400",
+            "1_1401",
+            "1_1402",
+            "1_1403",
+            "1_1404"
+        ],
+        "3.C": [
+            "2_1405",
+            "2_1406",
+            "2_1407"
+        ],
+        "4.D": [
+            "3_1408",
+            "3_1409",
+            "3_1410",
+            "3_1411",
+            "3_1412",
+            "3_1413",
+            "3_1414",
+            "3_1415",
+            "3_1416"
+        ],
+        "5.E": [
+            "4_1417",
+            "4_1418",
+            "4_1419",
+            "4_1420",
+            "4_1421",
+            "4_1422",
+            "4_1423"
+        ],
+        "6.F": [
+            "5_1424",
+            "5_1425",
+            "5_1426",
+            "5_1427"
+        ],
+        "7.G": [
+            "6_1428",
+            "6_1429",
+            "6_1430",
+            "6_1431",
+            "6_1432",
+            "6_1433",
+            "6_1434",
+            "6_1435",
+            "6_1436",
+            "6_1437",
+            "6_1440",
+            "6_1441",
+            "6_1442",
+            "6_1482"
+        ],
+        "8.H": [
+            "7_1443",
+            "7_1444",
+            "7_1445",
+            "7_1446",
+            "7_1447",
+            "7_1448"
+        ],
+        "9.I": [
+            "8_1449",
+            "8_1450",
+            "8_1451",
+            "8_1452",
+            "8_1453",
+            "8_1454"
+        ],
+        "10.J": [
+            "9_1455",
+            "9_1456",
+            "9_1457",
+            "9_1458",
+            "9_1459",
+            "9_1460",
+            "9_1461"
+        ],
+        "11.K": [
+            "10_1462",
+            "10_1463",
+            "10_1464",
+            "10_1465"
+        ],
+        "12.L": [
+            "11_1466",
+            "11_1467"
+        ],
+        "13.M": [
+            "12_1468",
+            "12_1469",
+            "12_1470"
+        ],
+        "14.N": [
+            "13_1471",
+            "13_1472",
+            "13_1473"
+        ],
+        "15.O": [
+            "14_1474",
+            "14_1475",
+            "14_1476",
+            "14_1477"
+        ],
+        "16.P": [
+            "15_1478",
+            "15_1479"
+        ],
+        "17.Q": [
+            "16_1480",
+            "16_1481",
+            "16_1483"
+        ]
+    }
+}
