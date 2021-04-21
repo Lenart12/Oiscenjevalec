@@ -249,7 +249,6 @@ function izpisiStran() {
             a.href = '#naloga-' + (index + 1);
         });
     } else if (stNaloga == "2") {
-        console.log('2 lmao')
         vrednotenje.forEach((el, index) => {
             let row = cE('div', '', 'row mt-3 mx-5', naloge);
             cE('hr', '', 'w-100', row);
@@ -287,7 +286,7 @@ function izpisiStran() {
                         };
                         label.onclick = () => {
                             cbx.value = el.navodila[i].naloge[j].tocke;
-                            oceniOddajo()
+                            oceniOddajo();
                         };
                     }
                     cbx.id = index + '-' + el.navodila[i].sklop + '-' + j;
