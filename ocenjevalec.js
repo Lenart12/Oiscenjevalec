@@ -23,6 +23,8 @@ function zacniOcenjevanje() {
         offsets = json.offsets;
         izpisiStran();
     };
+    if(document.getElementById('naloga').value == 2)
+        window.location.href = "./koTeJebe.html";
 
     xhttp.open('GET', 'naloge/' + document.getElementById('naloga').value + '.json');
     xhttp.send();
