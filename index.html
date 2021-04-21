@@ -29,13 +29,14 @@
                 <form method="post" onsubmit="zacniOcenjevanje(); return false;">
                     <div class="form-group text-center">
                         <label for="naloga">Izberi domaco nalogo</label>
-                        <select name="naloga" id="naloga" required>
+                        <select name="naloga" id="naloga" onchange="document.getElementById('input-fg').hidden = this.value == 2"  required>
                             <option value="1">DN. 1</option>
+                            <option value="2" selected>DN. 2</option>
                         </select>
                     </div>
-                    <div class="form-group mt-2">
+                    <div class="form-group mt-2" id="input-fg" hidden>
                         <label for="oddaja">Vnesi oddajo študenta</label>
-                        <textarea class="form-control" name="oddaja" id="oddaja" rows="25" placeholder="# A # git@github.com:Lenart12/Oiscenjevalec.git #&#10# B # ..." required></textarea>
+                        <textarea class="form-control" name="oddaja" id="oddaja" rows="25" placeholder="# A # git@github.com:Lenart12/Oiscenjevalec.git #&#10# B # ..."></textarea>
                     </div>
                     <div class="form-group text-center mt-4">
                         <button type="submit" class="btn btn-primary">Oceni</button>
