@@ -293,7 +293,9 @@
                     ],
                     "opomba": "Če se strežnik ne zažene ali veja razvoja <ic>IV-racun</ic> ne obstaja ali ne vsebuje vsaj 2 uveljavitev, v okviru te podnaloge dodelite <strong>0 točk!</strong><br />Spodnja koda je primer delujoče implementacije (tega vam ni treba neposredno vrednotiti):<br /><ic>eracun.js</ic><pre class=\"lang-javascript\"><code>// Izpis račun v HTML predstavitvi na podlagi podatkov iz baze\nstreznik.post(\"/izpisiRacunBaza\", (zahteva, odgovor) => {\n    let form = new formidable.IncomingForm();\n    form.parse(zahteva, (napaka, polja) => {\n      let racunId = parseInt(polja[\"seznamRacunov\"], 10);\n      strankaIzRacuna(racunId, (stranka) => {\n        filmiIzRacuna(racunId, (napaka, filmi) => {\n<hl>          let povzetek = {\n            vsotaSPopustiInDavki: 0,\n            vsoteZneskovDdv: { 0: 0, 9.5: 0, 22: 0 },\n            vsoteOsnovZaDdv: { 0: 0, 9.5: 0, 22: 0 },\n            vsotaVrednosti: 0,\n            vsotaPopustov: 0,\n          };\n          filmi.forEach((film, i) => {\n            film.zapSt = i + 1;\n            film.cena = film.trajanje / 100;\n            film.vrednost = film.kolicina * film.cena;\n            film.davcnaStopnja = 22;\n            film.popustStopnja = 0;\n            film.popust = film.kolicina * film.cena * (film.popustStopnja / 100);\n            film.osnovaZaDdv = film.vrednost - film.popust;\n            film.ddv = film.osnovaZaDdv * (film.davcnaStopnja / 100);\n            film.osnovaZaDdvInDdv = film.osnovaZaDdv + film.ddv;\n            povzetek.vsotaSPopustiInDavki += film.osnovaZaDdv + film.ddv;\n            povzetek.vsoteZneskovDdv[\"\" + film.davcnaStopnja] += film.ddv;\n            povzetek.vsoteOsnovZaDdv[\"\" + film.davcnaStopnja] += film.osnovaZaDdv;\n            povzetek.vsotaVrednosti += film.vrednost;\n            povzetek.vsotaPopustov += film.popust;\n          });</hl>\n          odgovor.setHeader(\"Content-Type\", \"text/xml\");\n          odgovor.render(\"eslog\", {\n            vizualiziraj: true,\n<del>            postavkeRacuna: null,</del>\n<hl>            postavkeRacuna: filmi,</hl>\n<del>            povzetekRacuna: null,</del>\n<hl>            povzetekRacuna: povzetek,</hl>\n            stranka: null,\n            stranka: stranka,\n            layout: null,\n          });\n        });\n      });\n    });\n  });</code></pre><ic>views/eslog.hbs</ic><pre class=\"lang-xml\"><code>&lt;S_NAD>\n  &lt;D_3035>BY&lt;/D_3035>\n  &lt;C_C080>\n    &lt;!-- BT-44: The full name of the Buyer. -->\n<del>    &lt;D_3036>&lt;/D_3036></del>\n<hl>    &lt;D_3036>{{ stranka.FirstName }} {{ stranka.LastName }}&lt;/D_3036></hl>\n  &lt;/C_C080>\n  &lt;C_C059>\n    &lt;!-- BT-50: The main address line in an address. -->\n<del>    &lt;D_3042>&lt;/D_3042></del>\n<hl>    &lt;D_3042>{{ stranka.Address }}&lt;/D_3042></hl>\n  &lt;/C_C059>\n  &lt;!-- BT-52: The common name of the city, town or village, where the Buyer's address is located. -->\n<del>  &lt;D_3164>&lt;/D_3164></del>\n<hl>  &lt;D_3164>{{ stranka.City }}&lt;/D_3164></hl>\n  &lt;C_C819>\n    &lt;!-- BT-54: The subdivision of a country. -->\n<del>    &lt;D_3228>&lt;/D_3228></del>\n<hl>    &lt;D_3228>{{ stranka.Country }}&lt;/D_3228></hl>\n  &lt;/C_C819>\n  &lt;!-- BT-53: The identifier for an addressable group of properties according to the relevant postal service. -->\n<del>  &lt;D_3251>&lt;/D_3251></del>\n<hl>  &lt;D_3251>{{ stranka.PostalCode }}&lt;/D_3251></hl>\n  &lt;!-- BT-55: A code that identifies the country. -->\n  &lt;D_3207>/&lt;/D_3207>\n&lt;/S_NAD></code></pre>"
                 }
-            ]
+            ],
+            "tip" : "eracun",
+            "html" : "resitev-baza.html"
         },
         {
             "navodila": [
@@ -320,7 +322,9 @@
                     ],
                     "opomba": "Če se strežnik ne zažene ali veja razvoja <ic>V-popust</ic> ne obstaja ali ne vsebuje vsaj 2 uveljavitev, v okviru te podnaloge dodelite <strong>0 točk!</strong>"
                 }
-            ]
+            ],
+            "tip" : "eracun",
+            "html" : "resitev-kosarica-3.html"
         },
         {
             "navodila": [
@@ -343,7 +347,9 @@
                     ],
                     "opomba": "Primer delujoče implementacije prikazuje spodnja koda (tega vam ni potrebno neposredno vrednotiti):<br /><ic>eracun.js</ic><pre class=\"lang-javascript\"><code>// Vrni podrobnosti o stranki iz seje\nconst strankaIzSeje = (zahteva, povratniKlic) => {\n<hl>    if (!zahteva.session.trenutnaStranka) {</hl>\n      povratniKlic(false);\n<hl>    } else {\n      pb.all(\n        \"SELECT * \\n         FROM   Customer \\n         WHERE  Customer.CustomerId = $id\",\n        { $id: zahteva.session.trenutnaStranka },\n        (napaka, vrstice) => {\n          if (napaka) povratniKlic(false);\n          else povratniKlic(vrstice[0]);\n        }\n      );</hl>\n    }\n  };\n  ...\n  // Izpis računa v HTML predstavitvi ali izvorni XML obliki\n  streznik.get(\"/izpisiRacun/:oblika\", (zahteva, odgovor) => {\n    strankaIzSeje(zahteva, (stranka) => {\n      filmiIzKosarice(zahteva, (filmi) => {\n        if (!filmi) {\n          ...\n        } else if (filmi.length == 0) {\n          ...\n        } else {\n          ...\n          filmi.forEach((film, i) => {\n            ...\n            film.popustStopnja = 0;\n<hl>            film.popustStopnja += film.zanri.split(\",\").length > 1 ? 5 : 0;\n            film.popustStopnja += film.ocena;</hl>\n            ...\n          });\n          ...\n        }\n      });\n    });\n  });</code></pre>"
                 }
-            ]
+            ],
+            "tip" : "eracun",
+            "html" : "resitev-kosarica-8.html"
         },
         {
             "navodila": [
@@ -434,7 +440,9 @@
                     ],
                     "opomba": ""
                 }
-            ]
+            ],
+            "tip" : "eracun",
+            "html" : "resitev-master.html"
         },
         {
             "navodila": [
@@ -453,7 +461,9 @@
                     ],
                     "opomba": ""
                 }
-            ]
+            ],
+            "tip" : "eracun",
+            "html" : "resitev-master.html"
         }
     ],
     "offsets": {
