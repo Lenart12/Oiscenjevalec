@@ -99,7 +99,72 @@ function oceniOddajo() {
     komentarji.innerHTML = vrniKomentarje();
 }
 
-let linkRepoz = "";
+function xmlDiff(prikazDiv, targetXml) {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onload = (ev) => {
+        let targetHtml = ev.target.responseText;
+        
+        let card = cE('div', '', 'card mx-auto', prikazDiv);
+        let cardBody = cE('div', '', 'card-body', card);
+        cE('h5', '<a class="link-dark" href="https://teaching.lavbic.net/cdn/OIS/DN2/' + targetXml.replace('html', 'xml') + '"> Vstavi shranjeno ' + targetXml + '</a>', 'card-title', cardBody);
+        cE('h6', 'Svoj racun shrani kot .html (desni klik->Shrani stran kot...) in ga vstavi sem', 'card-title', cardBody);
+        let input = cE('input', '', 'card-subtitle my-2', cardBody);
+        input.type = 'file';
+        input.accept = "text/html";
+        
+        let diffcard = cE('div', '', 'card mx-auto mt-1', cardBody);
+        diffcard.hidden = true;
+        let diffcardBody = cE('div', '', 'card-body', diffcard);
+        cE('h6', 'Prikazana razlika', 'card-title', diffcardBody);
+        let status = cE('h6', '', 'card-title', diffcardBody);
+        let diffBody = cE('h6', '', 'card-subtitle', diffcardBody);
+        let pre = cE('pre', '<code class="language-diff hljs"></code>', 'card-text', diffBody);
+        
+        input.onchange = (iev) => {
+            const reader = new FileReader();
+            
+            reader.onload = (fev) => {
+                diffcard.hidden = false;
+                let t1 = document.createElement('div');
+                t1.innerHTML = targetHtml;
+                let t2 = document.createElement('div');
+                t2.innerHTML = fev.target.result;
+                
+                result = patienceDiffPlus(t1.innerText.split('\n'), t2.innerText.split('\n'));
+                let diffLines = "";
+
+                result.lines.forEach((o) => {
+                    if (o.line.trim() == "") {
+                        return;
+                    } else if (o.bIndex < 0 && o.moved) {
+                        diffLines += "-m  ";
+                    } else if (o.moved) {
+                        diffLines += "+m  ";
+                    } else if (o.aIndex < 0) {
+                        diffLines += "+   ";
+                    } else if (o.bIndex < 0) {
+                        diffLines += "-   ";
+                    } else {
+                        return;
+                    }
+                    diffLines += o.line.trim() + "\n";
+                });
+                if(!diffLines) {
+                    diffLines = "@@ Brez razlike!";
+                }
+                pre.firstChild.innerHTML = diffLines.replaceAll('<', '&lt;');
+                status.innerHTML = `<span class="text-success">+${result.lineCountInserted}</span> <span class="text-danger">-${result.lineCountDeleted}</span> <span class="text-info">M${result.lineCountMoved}</span>`;
+
+                hljs.highlightElement(pre.firstChild);
+            };
+
+            reader.readAsText(iev.target.files[0]);
+        };
+
+    };
+    xhttp.open('GET', 'naloge/eracun/' + targetXml);
+    xhttp.send();
+}
 
 function izpisiStran() {
     let naloge = document.getElementById('naloge');
@@ -252,7 +317,16 @@ function izpisiStran() {
         vrednotenje.forEach((el, index) => {
             let row = cE('div', '', 'row mt-3 mx-5', naloge);
             cE('hr', '', 'w-100', row);
-            let tockeDiv = cE('div', '', 'col-md-12', row);
+
+            let tockeDiv;
+            let prikazDiv;
+            if(el.tip == "eracun"){
+                tockeDiv = cE('div', '', 'col-md-6', row);
+                prikazDiv = cE('div', '', 'col-md-6', row);
+                xmlDiff(prikazDiv, el.html);
+            } else {
+                tockeDiv = cE('div', '', 'col-md-12', row);
+            }
     
             for (let i = 0; i < el.navodila.length; i++) {
                 if (i > 0)
