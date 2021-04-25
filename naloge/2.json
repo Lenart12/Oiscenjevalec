@@ -116,7 +116,7 @@
             "navodila": [
                 {
                     "sklop": "E",
-                    "naslov": "Z ukazom git checkout <ic>II-pregled-stranke</ic> se prestavite v vejo razvoja <ic>II-pregled-stranke</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite prijavno stran <ic>/prijava</ic>, kjer naj ne bo izbrana nobena stranka, in nato kliknite na gumb <ic>Prijava stranke</ic>. Nato izberite 3. stranko na seznamu, <ic>François Tremblay</ic> in kliknite na gumb Prijava stranke. Na začetni spletni strani <ic>/</ic> kliknite na gumb <ic>Odjava François Tremblay</ic>.",
+                    "naslov": "Z ukazom <ic>git checkout II-pregled-stranke</ic> se prestavite v vejo razvoja <ic>II-pregled-stranke</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite prijavno stran <ic>/prijava</ic>, kjer naj ne bo izbrana nobena stranka, in nato kliknite na gumb <ic>Prijava stranke</ic>. Nato izberite 3. stranko na seznamu, <ic>François Tremblay</ic> in kliknite na gumb Prijava stranke. Na začetni spletni strani <ic>/</ic> kliknite na gumb <ic>Odjava François Tremblay</ic>.",
                     "naloge": [
                         {
                             "tocke": 1,
@@ -174,7 +174,7 @@
             "navodila": [
                 {
                     "sklop": "G",
-                    "naslov": "Z ukazom git checkout <ic>III-kosarica</ic> se prestavite v vejo razvoja <ic>III-kosarica</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite začetno spletno stran <ic>/</ic>. Ko se stran naloži, jo še enkrat ponovno naložite.",
+                    "naslov": "Z ukazom <ic>git checkout III-kosarica</ic> se prestavite v vejo razvoja <ic>III-kosarica</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite začetno spletno stran <ic>/</ic>. Ko se stran naloži, jo še enkrat ponovno naložite.",
                     "naloge": [
                         {
                             "tocke": 1,
@@ -268,7 +268,7 @@
             "navodila": [
                 {
                     "sklop": "I",
-                    "naslov": "Z ukazom git checkout <ic>IV-racun</ic> se prestavite v vejo razvoja <ic>IV-racun</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite prijavno spletno stran prodajalne <ic>/prijava</ic>. Izberite 7. račun na seznamu (tj. račun za <ic>Niklas Schröder (7) - 2009-02-01</ic>) ter pritisnite gumb <ic>Izbira računa</ic>.",
+                    "naslov": "Z ukazom <ic>git checkout IV-racun</ic> se prestavite v vejo razvoja <ic>IV-racun</ic> in poženite strežnik z ukazom <ic>node eracun.js</ic> ali s klikom na gumb Run.<br />Obiščite prijavno spletno stran prodajalne <ic>/prijava</ic>. Izberite 7. račun na seznamu (tj. račun za <ic>Niklas Schröder (7) - 2009-02-01</ic>) ter pritisnite gumb <ic>Izbira računa</ic>.",
                     "naloge": [
                         {
                             "tocke": 1,
