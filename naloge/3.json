@@ -1,0 +1,436 @@
+{
+    "vrednotenja": [
+        {
+            "navodila": [
+                {
+                    "sklop": "A",
+                    "naslov": "Ali je izbrano <strong>ime aplikacije</strong> zapisano na vseh zahtevanih mestih?",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Na vseh treh podstraneh <ic>index.html</ic> (začetna spletna stran), <ic>opis.html</ic> (ko izberete povezavo <strong>Opis ideje</strong>) in <ic>nacrt.html</ic> (ko izberete povezavo <strong>Načrt informacijske rešitve</strong>) je v levem zgornjem kotu, namesto vnaprej pripravljenega nastavka kode <ic>{ime vaše aplikacije}</ic>, zapisano izbrano ime aplikacije, ki je konsistentno (tj. vse tri vrednosti so enake) in različno od <ic>{ime vaše aplikacije}</ic>."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "B",
+                    "naslov": "Ali je <strong>opis aplikacije</strong> zapisan na zahtevanem mestu?",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Na spletni strani <ic>opis.html</ic> se v razdelku “Opis ideje, ki jo aplikacija podpira” nahaja opis aplikacije, ki ni daljši od približno 200 besed."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Iz opisa aplikacije je mogoče razbrati <strong>osnovni scenarij uporabe</strong> oz. za kakšen <strong>namen se aplikacija uporablja</strong>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Iz opisa aplikacije je mogoče razbrati <strong>ciljnega uporabnika</strong> (tj. komu je aplikacija namenjena)."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "C",
+                    "naslov": "Ali je <strong>zunanji vir podatkov</strong> zapisan na zahtevanem mestu?",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Na spletni strani <ic>opis.html</ic> se v razdelku “Uporabljeni zunanji viri podatkov” <strong>nahaja opis</strong> zunanjega vira podatkov."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Iz opisa zunanjega vira podatkov je mogoče razbrati <strong>URL naslov</strong>, iz katerega so bili podatki pridobljeni."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Iz opisa zunanjega vira podatkov je mogoče razbrati <strong>način uporabe</strong> (tj. neposredni API klic, uvožena statična datoteka ipd.)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Zunanji vir se interaktivno uporablja s pomočjo <strong>API dostopa</strong> ali so bile pri pridobitvi podatkov izvedene dodatne aktivnosti (npr. študent je vključil podatke kot datoteko, a je podatke predhodno sprocesiral - počistil oz. ročno pripravil vsebino, agregiral podatke ipd.)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Na podlagi pregleda delovanja aplikacije je <strong>razvidna uporaba zunanjega vira</strong> (tj. pri uporabi aplikacije je mogoče opaziti podatke iz zunanjega vira)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Zunanji vir je <strong>smiselno vključen v delovanje aplikacije</strong> (npr. zunanji vir ni uporabljen samo zato, da se zadosti zahtevam naloge, ampak integracija predstavlja dodano vrednost in dejansko dopolnjuje podatke iz Teaching API strežnika)."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "D",
+                    "naslov": "Ali je <strong>metoda <ic>generirajPodatke(stPacienta)</ic> ustrezno implementirana</strong>?",
+                    "naloge": [
+                        {
+                            "tocke": 2,
+                            "besedilo": "Metoda <ic>generirajPodatke(stPacienta)</ic> je <strong>implementirana</strong> in izgleda, da generira 3 različne paciente in napolni nekaj testnih podatkov za vsakega izmed njih."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "<strong>Podatki</strong> 3 pacientov so med seboj dovolj <strong>različni</strong>, tj. predstavljajo 3 različne vzorčne paciente."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "E",
+                    "naslov": "Ali se ob <strong>kliku na povezavo Generiranje podatkov</strong> na začetni strani <strong>izvede generiranje podatkov</strong>?",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "<strong>Ob kliku</strong> na povezavo Generiranje podatkov <strong>se pokliče metoda</strong> <ic>generirajPodatke</ic>."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "<strong>Rezultat</strong> generiranja podatkov so <strong>trije novi EHR ID-ji</strong> pacientov, ki so jasno prikazani (npr. se dodajo v izbirni meni ali so prikazani kot sporočilo na spletni strani in jih lahko vnesemo za začetek uporabe aplikacije)."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "F",
+                    "naslov": "<strong>Začetek uporabe aplikacije</strong> z izbranim pacientom.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Uporabnik ima, pred vstopom v aplikacijo, <strong>možnost izbrati enega izmed 3 vzorčnih pacientov</strong>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Aplikacija <strong>omogoča vnos poljubnega EHR ID pacienta</strong>, s katerim jo lahko začnemo uporabljati."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "G",
+                    "naslov": "Ali je <strong>diagram primerov uporabe (DPU)</strong> ustrezen?",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prisoten je vsaj <strong>1 človeški uporabnik</strong> (npr. uporabnik, pacient, zdravnik ipd.), ki je modeliran v obliki <strong>akterja</strong>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prisotna sta vsaj <strong>2 primera uporabe (PU)</strong>, ki sta modelirana v obliki elipse. Imena PU-jev (besedilo znotraj elipse) so dovolj opisna in niso dvoumna."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Med človeškim uporabnikom (akterjem) in obema primeroma uporabe obstajata dve <strong>povezavi od akterja do PU-jev</strong>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prisotna sta <strong>vsaj 2 zunanja sistema</strong> (1x TeachingAPI in 1x izbrani zunanji vir), ki sta modelirana v obliki <strong>akterjev</strong>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Med vsaj 1 PU-jem in vsemi zunanjimi sistemi (akterji) obstajajo <strong>povezave od PU-ja do akterjev (zunanjih sistemov)</strong>."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "H",
+                    "naslov": "Ali je <strong>VOPC razredni diagram</strong> ustrezen?",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prisoten je <strong>vsaj 1 kontrolni razred</strong> (stereotip <ic>&lt;&lt;control>></ic>), ki opredeljuje metode, potrebne za delovanje aplikacije."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prisoten je <strong>vsaj 1 mejni razred</strong> (stereotip <ic>&lt;&lt;boundary>></ic>), ki opredeljuje uporabniški vmesnik."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Na mejnem razredu, ki opredeljuje uporabniški vmesnik, so vsa <strong>vnosna polja</strong> predstavljena kot <strong>atributi</strong> in vse <strong>akcije (gumbi in povezave)</strong> so predstavljene kot <strong>metode</strong>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prisoten je <strong>1 mejni razred</strong> (stereotip <ic>&lt;&lt;boundary>></ic>), ki opredeljuje sistemski vmesnik do sistema <strong>Teaching API</strong>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Prisoten je <strong>1 mejni razred</strong> (stereotip <ic>&lt;&lt;boundary>></ic>), ki opredeljuje sistemski vmesnik do <strong>dodatnega zunanjega vira</strong>, ki ga je treba uporabiti pri aplikaciji."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "<strong>Oba mejna razreda</strong>, ki opredeljujeta <strong>sistemska vmesnika</strong> do Teaching API in dodatnega zunanjega vira, vsebujeta metode, ki so bile uporabljene v aplikaciji."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "VOPC razredni diagram <strong>izgleda vsebinsko ustrezen</strong> glede na opis osnovne ideje in vsebuje vse zahtevane podatke."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "I",
+                    "naslov": "Ali je <strong>diagram zaporedja</strong> ustrezen?",
+                    "naloge": [
+                        {
+                            "tocke": 2,
+                            "besedilo": "Diagram zaporedja <strong>prikazuje osnovni tok dogodkov</strong> aplikacije (glede na opis osnovne ideje). To zaporedje si lahko predstavljamo kot realizacijo enega izmed primerov uporabe na diagramu primerov uporabe. Diagram zaporedja mora opisovati glavno funkcionalnost aplikacije in mora biti vsebinsok dovolj podroben."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "<strong>Imena</strong> objektov na <strong>diagramu zaporedja so skladna</strong> z imeni razredov na <strong>VOPC razrednem diagramu</strong> (npr. če imamo razred <ic>TeachingAPI</ic>, potem je objekt <ic>:TeachingAPI</ic>)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Na diagramu zaporedja je <strong>na vsaki povezavi</strong> prisotno <strong>ime metode</strong>, ki se kliče na izbranem objektu oz. je na voljo <strong>komentar</strong> (npr. <ic>// nekaj naredi</ic>)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "<strong>Parametri</strong> v metodah imajo <strong>nastavljene ustrezne vrednosti</strong> (npr. če je pri klicu metode na Teaching API strežniku potrebna kakšna privzeta vrednost, je to zapisano kot vrednost parametra; če je treba kakšno spremenljivko predhodno izračunati (npr. <ic>auth</ic>), se le-to naredi in jo kasneje uporabi kot parameter v klicih naslednjih metod)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "<strong>Življenjske črte</strong> (črtkana črta) in <strong>čas življenja objekta</strong> (navpičen pravokotnik) so ustrezno prikazani in pomagajo pri razumevanju toka dogodkov."
+                        },
+                        {
+                            "tocke": 3,
+                            "besedilo": "<strong>Diagram zaporedja je skladen z implementacijo</strong> (preverite ali je mogoče takšno zaporedje iz diagrama simulirati na implementirani aplikaciji in ali se zgodijo isti koraki v predvidenem zaporedju)."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "J",
+                    "naslov": "Prisotnost <strong>master/detail</strong> načrtovalskega vzorca.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Med opisom ideje je <strong>prisoten opis</strong> uporabljenega <strong>master/detail načrtovalskega vzorca</strong>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Glede na opis uporabljenega vzorca je <strong>prisotna</strong> tudi <strong>implementacija</strong> tega <strong>master/detail vzorca</strong>."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "<strong>Implementacija deluje</strong> (tj. če iz seznama master vrednosti izberemo določeno vrednost, se nam v detail delu prikažejo odvisne vrednosti - pri vsaki izbrani master vrednosti se prikažejo drugačne (odvisne) detail vrednosti)."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "K",
+                    "naslov": "Vizualizacija podatkov v obliki <strong>grafa</strong>.",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Med opisom ideje je <strong>prisoten opis</strong> uporabljene <strong>tehnike za vizualizacijo podatkov</strong>."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "<strong>Vizualizacija</strong> podatkov v obliki grafa <strong>deluje</strong> (prikaže podatke, opredeljene v opisu) in ne vrača napak."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "L",
+                    "naslov": "",
+                    "naloge": [
+                        {
+                            "tocke": 1,
+                            "besedilo": "Začetna spletna stran (<ic>index.html</ic>) vsebuje delujočo povezavo <strong>Blockchain certifikat kakovosti</strong> na študentovo Ethereum denarnico na <strong>Etherscan</strong> spletnem mestu na omrežju <strong>Ropsten</strong> (npr. <ic>https://ropsten.etherscan.io/address/0xccc36b3536cb7e3639777c24ed1f95ff9b7da394</ic>)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Ob kliku na povezavo <strong>Blockchain certifikat kakovosti</strong> se ta odpre <strong>v novem oknu</strong> ali <strong>zavihku brskalnika</strong> (npr. HTML element <ic>a</ic> vsebuje atribut <ic>target=\"_blank\"</ic>)."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Spletno mesto denarnice (<ic>https://ropsten.etherscan.io/address/{naslov_denarnice}</ic>) vsebuje <strong>vsaj eno</strong> transakcijo za pridobitev kriptožetona <ic>FRI OIS 2021 (OIS21)</ic> z oznako <strong>IN</strong> v zavihku <ic>Erc20 Token Tnxs</ic>."
+                        },
+                        {
+                            "tocke": 1,
+                            "besedilo": "Spletno mesto denarnice vsebuje <strong>neničelno</strong> vrednost Ethereum kriptovalute (ETH) navedeno v atributu <strong>Balance</strong>: (npr. <ic>Balance: 0.5 Ether</ic>)."
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        },
+        {
+            "navodila": [
+                {
+                    "sklop": "M",
+                    "naslov": "<strong>Delovanje</strong> aplikacije in splošen vtis.",
+                    "naloge": [
+                        {
+                            "tocke": 2,
+                            "besedilo": "Implementirana <strong>ideja se vsebinsko razlikuje od demo primera</strong>, predstavljenega na predavanjih in vajah in ni kopija le-teh (lahko pa ga seveda nadgrajuje)."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "Aplikacija <strong>deluje tako</strong>, kot je predstavljeno v <strong>opisu ideje</strong>."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "Implementacija aplikacije je <strong>skladna z načrtom</strong> informacijske rešitve."
+                        },
+                        {
+                            "tocke": 2,
+                            "besedilo": "Implementirana aplikacija je <strong>nadpovprečna</strong> in bi jo označili kot eno boljših.<ul><li>Če je aplikacija <strong>povprečna</strong>, potem dodelite 1 točko.</li><li>V primeru, da je <strong>podpovprečna</strong>, pa 0 točk.</li><ul>"
+                        }
+                    ],
+                    "opomba": ""
+                }
+            ]
+        }
+    ],
+    "offsets": {
+        "1.A": [
+            "0_1484",
+            "0_1485"
+        ],
+        "2.B": [
+            "1_1486",
+            "1_1487",
+            "1_1488",
+            "1_1489"
+        ],
+        "3.C": [
+            "2_1490",
+            "2_1491",
+            "2_1492",
+            "2_1493",
+            "2_1494",
+            "2_1495",
+            "2_1496"
+        ],
+        "4.D": [
+            "3_1497",
+            "3_1498",
+            "3_1499",
+            "3_1500"
+        ],
+        "5.E": [
+            "4_1501",
+            "4_1502",
+            "4_1503",
+            "4_1504"
+        ],
+        "6.F": [
+            "5_1505",
+            "5_1506",
+            "5_1507"
+        ],
+        "7.G": [
+            "6_1508",
+            "6_1509",
+            "6_1510",
+            "6_1511",
+            "6_1512",
+            "6_1513"
+        ],
+        "8.H": [
+            "7_1514",
+            "7_1515",
+            "7_1516",
+            "7_1517",
+            "7_1518",
+            "7_1519",
+            "7_1520",
+            "7_1521",
+            "7_1522",
+            "7_1523"
+        ],
+        "9.I": [
+            "8_1524",
+            "8_1525",
+            "8_1526",
+            "8_1527",
+            "8_1528",
+            "8_1529",
+            "8_1530",
+            "8_1531",
+            "8_1532",
+            "8_1533"
+        ],
+        "10.J": [
+            "9_1534",
+            "9_1535",
+            "9_1536",
+            "9_1537",
+            "9_1538"
+        ],
+        "11.K": [
+            "10_1539",
+            "10_1540",
+            "10_1541",
+            "10_1542"
+        ],
+        "12.L": [
+            "11_1543",
+            "11_1544",
+            "11_1545",
+            "11_1546",
+            "11_1547"
+        ],
+        "13.M": [
+            "12_1548",
+            "12_1549",
+            "12_1550",
+            "12_1551",
+            "12_1552",
+            "12_1553",
+            "12_1554",
+            "12_1555",
+            "12_1556"
+        ]
+    }
+}
