@@ -61,7 +61,11 @@ function oceniOddajo() {
     });
 
     Array.from(document.querySelectorAll('input[type="number"]')).forEach( (el) => {
-        vsota[el.sklop] += parseInt(el.value);
+        let value = parseInt(el.value);
+        if (vsota[el.sklop]) 
+            vsota[el.sklop] += value;
+        else
+            vsota[el.sklop] = value;
     });
     
     let skupaj = 0;
@@ -313,7 +317,7 @@ function izpisiStran() {
             let a = cE('a', index + 1, 'nav-link', nav);
             a.href = '#naloga-' + (index + 1);
         });
-    } else if (stNaloga == "2") {
+    } else if (stNaloga == "2" || stNaloga == "3") {
         vrednotenje.forEach((el, index) => {
             let row = cE('div', '', 'row mt-3 mx-5', naloge);
             cE('hr', '', 'w-100', row);
@@ -332,7 +336,7 @@ function izpisiStran() {
                 if (i > 0)
                     cE('hr', '', 'w-100', tockeDiv);
                 if (el.navodila[i].naslov)
-                    cE('h5', el.navodila[i].naslov, '', tockeDiv);
+                    cE('h5', el.navodila[i].sklop + '. ' + el.navodila[i].naslov, '', tockeDiv);
     
                 let ol = cE('ol', '', 'form-group mt-1', tockeDiv);
     
